@@ -127,6 +127,18 @@ terraform destroy -auto-approve
 
 ### Выполнения задания 1.8
 
+Объясните, почему при этом не был удалён docker-образ nginx:latest. Ответ ОБЯЗАТЕЛЬНО НАЙДИТЕ В ПРЕДОСТАВЛЕННОМ КОДЕ, а затем ОБЯЗАТЕЛЬНО ПОДКРЕПИТЕ строчкой из документации terraform провайдера docker.
+
+Docker-образ nginx:latest не был удален, потому что Terraform управляет контейнерами, а не образами. Образы остаются в системе, чтобы их можно было использовать повторно.
+
+https://docs.comcloud.xyz/providers/kreuzwerker/docker/latest/docs/resources/image
+
+
+keep_locally (логическое значение) Если значение true, то изображение Docker не будет удалено при операции destroy.  
+Если значение false, то изображение будет удалено из локального хранилища docker при операции destroy.
+
+![image.jpg](https://github.com/Byzgaev-I/Terraform-Intro/blob/main/8.jpg)
+
 
 
 
