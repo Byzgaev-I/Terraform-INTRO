@@ -38,6 +38,19 @@
 
 ![image.jpg](https://github.com/Byzgaev-I/Terraform-Intro/blob/main/1-1.png)
 
+### Выполнения задания 1.2
+
+![image.jpg](https://github.com/Byzgaev-I/Terraform-Intro/blob/main/1-2.png)
+
+Обычно это файлы с расширением .tfvars, такие как *.tfvars или конкретные файлы, например, secrets.tfvars.
+Для хранения секретной информации подходит - personal.auto.tfvars
+
+### Выполнения задания 1.3
+
+![image.jpg](https://github.com/Byzgaev-I/Terraform-Intro/blob/main/1-3.png)
+
+![image.jpg](https://github.com/Byzgaev-I/Terraform-Intro/blob/main/1-3-1.png)
+
 
 
 
