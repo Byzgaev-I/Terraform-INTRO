@@ -99,7 +99,33 @@ resource "docker_container" "nginx" {
 
 Замените имя docker-контейнера в блоке кода на hello_world. Не перепутайте имя контейнера и имя образа. Мы всё ещё продолжаем использовать name = "nginx:latest". Выполните команду terraform apply -auto-approve. Объясните своими словами, в чём может быть опасность применения ключа -auto-approve. Догадайтесь или нагуглите зачем может пригодиться данный ключ? В качестве ответа дополнительно приложите вывод команды docker ps. 
 
+Открыл и заменил имя контейнера.
 
+```bash
+resource "docker_container" "nginx" {
+  name  = "hello_world"
+  image = "nginx:latest"
+  ...
+}
+```
+
+![image.jpg](https://github.com/Byzgaev-I/Terraform-Intro/blob/main/6-1.png)
+
+Опасность использования ключа -auto-approve:
+Ключ -auto-approve автоматически подтверждает все изменения, что может привести к случайному удалению или изменению ресурсов без моего подтверждения.
+
+### Выполнения задания 1.7
+
+Уничтожьте созданные ресурсы с помощью terraform. Убедитесь, что все ресурсы удалены. Приложите содержимое файла terraform.tfstate.  
+
+```sh
+terraform destroy -auto-approve
+```
+
+![image.jpg](https://github.com/Byzgaev-I/Terraform-Intro/blob/main/7-1.png)
+
+
+### Выполнения задания 1.8
 
 
 
