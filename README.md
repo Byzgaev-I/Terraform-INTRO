@@ -71,7 +71,27 @@
 
 ![image.jpg](https://github.com/Byzgaev-I/Terraform-Intro/blob/main/4-2.png)
 
+### Выполнения задания 1.5
 
+Выполните код. В качестве ответа приложите: исправленный фрагмент кода и вывод команды docker ps.  
+
+```bash
+resource "docker_image" "nginx" {
+  name         = "nginx:latest"
+  keep_locally = true
+}
+
+resource "docker_container" "nginx" {
+  image = docker_image.nginx.image_id
+  name  = "example_${random_password.random_string.result}"
+
+  ports {
+    internal = 80
+    external = 9090
+  }
+}
+
+```
 
 
 
