@@ -36,9 +36,13 @@
 
 ### Выполнения задания 1.1
 
+Перейдите в каталог src. Скачайте все необходимые зависимости, использованные в проекте.  
+
 ![image.jpg](https://github.com/Byzgaev-I/Terraform-Intro/blob/main/1-1.png)
 
 ### Выполнения задания 1.2
+
+Изучите файл .gitignore. В каком terraform-файле, согласно этому .gitignore, допустимо сохранить личную, секретную информацию?  
 
 ![image.jpg](https://github.com/Byzgaev-I/Terraform-Intro/blob/main/1-2.png)
 
@@ -47,9 +51,25 @@
 
 ### Выполнения задания 1.3
 
+ Выполните код проекта. Найдите в state-файле секретное содержимое созданного ресурса random_password, пришлите в качестве ответа конкретный ключ и его значение. 
+
 ![image.jpg](https://github.com/Byzgaev-I/Terraform-Intro/blob/main/1-3.png)
 
 ![image.jpg](https://github.com/Byzgaev-I/Terraform-Intro/blob/main/1-3-1.png)
+
+### Выполнения задания 1.4
+
+Раскомментируйте блок кода, примерно расположенный на строчках 29–42 файла main.tf. Выполните команду terraform validate. Объясните, в чём заключаются намеренно допущенные ошибки. Исправьте их.  
+
+
+![image.jpg](https://github.com/Byzgaev-I/Terraform-Intro/blob/main/4-1.png)
+
+"docker_image" - ресурсу не назначено имя.
+"docker_container" - имя начинается с цифры.
+
+Исправил. 
+
+![image.jpg](https://github.com/Byzgaev-I/Terraform-Intro/blob/main/4-2.png)
 
 
 
